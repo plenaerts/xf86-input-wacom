@@ -35,22 +35,6 @@ file (typically /dev/ttyS0 or similar) and any desired options:
 .B isdv4-serial-debugger /dev/ttyS0
 
 This will connect to the tablet, query its capabilities, and display real-time events.
-.SH OUTPUT
-The tool displays tablet information including:
-.TP
-\- Version and capabilities of the tablet
-.TP
-\- Maximum X and Y coordinates
-.TP
-\- Maximum tilt and pressure values
-.TP
-\- Touch sensor information (if available)
-
-During operation, it shows real-time events in the format:
-.TP
-\- Pen events: position, pressure, tilt, and button states
-.TP
-\- Touch events: position, capacity, and finger status
 .SH EXAMPLES
 .TP
 .B isdv4-serial-debugger \-b 19200 /dev/ttyS0
@@ -61,7 +45,7 @@ Connect with verbose output and reset the tablet first.
 .SH NOTES
 This tool requires direct access to the serial device, which requires
 appropriate permissions.
-.SH "SEE ALSO"
+.SH SEE ALSO
 isdv4-serial-inputattach (1), xsetwacom (1), wacom (4)
 .SH AUTHORS
 Written by Peter Hutterer <peter.hutterer@redhat.com> and other contributors.
